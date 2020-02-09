@@ -1,10 +1,6 @@
-
 <?php
 
-
-
 foreach ($argv as $arg) {
-
     $letters = substr($arg, -1);
     $numbers = explode(" ", $arg, 0);
 
@@ -15,7 +11,6 @@ foreach ($argv as $arg) {
     $GetValue[$letters] = $num;
 
     foreach ($GetValue as $key => $value) {
-
         for ($i = 0; $i < count($GetValue); $i++) {
 
             switch ($letters) {
@@ -43,10 +38,8 @@ foreach ($argv as $arg) {
     }
 }
 
-
 $calch = $h * 60 * 60;
 $calcm = $m * 60;
 $calcd = $d * 86400;
 $total = $calch + $calcm + $s + $calcd;
-
 echo $total . " Seconden";
